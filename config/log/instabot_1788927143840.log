@@ -1,0 +1,14 @@
+2021-08-02 16:00:48,119 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2021-08-02 16:00:48,119 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\searchdisaner\venv\lib\site-packages\instabot\bot\bot.py
+2021-08-02 16:00:48,120 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2021-08-02 16:00:48,120 - instabot version: 0.117.0 (api_login) - INFO - Recovery from D:\searchdisaner/config/instbober_uuid_and_cookie.json: COOKIE False - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=69e66906-ef6a-4561-86e6-8c98a236847c
+- uuid=81500ee0-4cf5-493e-ae1a-6a5011cbe63d
+- client_session_id=32957a9d-435a-448b-9ee5-e5e488d33b0c
+- device_id=android-ba894ce94a484232
+2021-08-02 16:00:48,132 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2021-08-02 16:00:48,395 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [429]>
+2021-08-02 16:00:48,396 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"Please wait a few minutes before you try again.","status":"fail"}'
+2021-08-02 16:00:48,396 - instabot version: 0.117.0 (api) - ERROR - Request returns 429 error!
+2021-08-02 16:00:48,396 - instabot version: 0.117.0 (api) - WARNING - That means 'too many requests'. I'll go to sleep for 5 minutes.

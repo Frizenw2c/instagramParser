@@ -1,0 +1,200 @@
+2021-08-20 12:32:16,739 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2021-08-20 12:32:16,739 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\searchdisaner\venv\lib\site-packages\instabot\bot\bot.py
+2021-08-20 12:32:16,769 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2021-08-20 12:32:16,769 - instabot version: 0.117.0 (api_login) - INFO - Recovery from D:\searchdisaner/config/instbober_uuid_and_cookie.json: COOKIE False - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=69e66906-ef6a-4561-86e6-8c98a236847c
+- uuid=81500ee0-4cf5-493e-ae1a-6a5011cbe63d
+- client_session_id=32957a9d-435a-448b-9ee5-e5e488d33b0c
+- device_id=android-ba894ce94a484232
+2021-08-20 12:32:16,769 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2021-08-20 12:32:17,073 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2021-08-20 12:32:17,350 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2021-08-20 12:32:17,638 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2021-08-20 12:32:19,130 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2021-08-20 12:32:22,126 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [200]>
+2021-08-20 12:32:22,126 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'instbober'!
+2021-08-20 12:32:22,127 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: True
+2021-08-20 12:32:22,520 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2021-08-20 12:32:22,817 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2021-08-20 12:32:23,150 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: zr/token/result/?device_id=android-ba894ce94a484232&token_hash=&custom_device_id=android-ba894ce94a484232&fetch_reason=token_expired returned response: <Response [200]>
+2021-08-20 12:32:23,428 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: multiple_accounts/get_account_family/ returned response: <Response [200]>
+2021-08-20 12:32:23,744 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2021-08-20 12:32:24,513 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: igtv/browse_feed/?prefetch=1 returned response: <Response [200]>
+2021-08-20 12:32:24,800 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: creatives/ar_class/ returned response: <Response [200]>
+2021-08-20 12:32:25,217 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2021-08-20 12:32:27,106 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2021-08-20 12:32:27,413 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/blocked/ returned response: <Response [200]>
+2021-08-20 12:32:28,094 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/ returned response: <Response [200]>
+2021-08-20 12:32:28,381 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: loom/fetch_config/ returned response: <Response [200]>
+2021-08-20 12:32:28,983 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: scores/bootstrap/users/?surfaces=["autocomplete_user_list","coefficient_besties_list_ranking","coefficient_rank_recipient_user_suggestion","coefficient_ios_section_test_bootstrap_ranking","coefficient_direct_recipients_ranking_variant_2"] returned response: <Response [200]>
+2021-08-20 12:32:29,301 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/eligibility/get_monetization_products_eligibility_data/?product_types=branded_content returned response: <Response [200]>
+2021-08-20 12:32:29,623 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/branded_content/should_require_professional_account/ returned response: <Response [200]>
+2021-08-20 12:32:29,928 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: linked_accounts/get_linkage_status/ returned response: <Response [200]>
+2021-08-20 12:32:30,220 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: locations/request_country/ returned response: <Response [200]>
+2021-08-20 12:32:30,507 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: qp/get_cooldowns/?signed_body=signed_body=4b9c516a5410a3bc128e09c6104a7f042146b9c2023870560c63a43a7f66781c.4&ig_sig_key_version=4&ig_sig_key_version=4 returned response: <Response [200]>
+2021-08-20 12:32:30,805 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/arlink_download_info/?version_override=2.2.1 returned response: <Response [200]>
+2021-08-20 12:32:31,326 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48835444494/info/ returned response: <Response [200]>
+2021-08-20 12:32:31,732 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [200]>
+2021-08-20 12:32:32,184 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&thread_message_limit=10&persistentBadging=true&limit=20 returned response: <Response [200]>
+2021-08-20 12:32:32,750 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&persistentBadging=true&limit=0 returned response: <Response [200]>
+2021-08-20 12:32:34,486 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: discover/topical_explore/?is_prefetch=true&omit_cover_media=true&use_sectional_payload=true&timezone_offset=0&session_id=32957a9d-435a-448b-9ee5-e5e488d33b0c&include_fixed_destinations=true returned response: <Response [200]>
+2021-08-20 12:32:34,903 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: notifications/badge/ returned response: <Response [200]>
+2021-08-20 12:32:35,276 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qp/batch_fetch/ returned response: <Response [200]>
+2021-08-20 12:32:35,277 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: D:\searchdisaner/config/instbober.checkpoint
+2021-08-20 12:32:41,354 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: feed/tag/дизайн/?max_id=&rank_token=48835444494_81500ee0-4cf5-493e-ae1a-6a5011cbe63d&ranked_content=true& returned response: <Response [200]>
+2021-08-20 12:32:41,898 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7535843816/info/ returned response: <Response [200]>
+2021-08-20 12:32:42,526 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/8079700354/info/ returned response: <Response [200]>
+2021-08-20 12:32:43,098 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1465366877/info/ returned response: <Response [200]>
+2021-08-20 12:32:43,518 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1193376289/info/ returned response: <Response [200]>
+2021-08-20 12:32:43,966 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/45305146999/info/ returned response: <Response [200]>
+2021-08-20 12:32:44,479 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/180597555/info/ returned response: <Response [200]>
+2021-08-20 12:32:44,938 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7537422912/info/ returned response: <Response [200]>
+2021-08-20 12:32:45,473 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/2933143873/info/ returned response: <Response [200]>
+2021-08-20 12:32:46,076 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/8303205166/info/ returned response: <Response [200]>
+2021-08-20 12:32:46,473 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/11201081131/info/ returned response: <Response [200]>
+2021-08-20 12:32:47,043 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/40998343279/info/ returned response: <Response [200]>
+2021-08-20 12:32:47,596 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48668506011/info/ returned response: <Response [200]>
+2021-08-20 12:32:48,105 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/49011041985/info/ returned response: <Response [200]>
+2021-08-20 12:32:48,639 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/3657199147/info/ returned response: <Response [200]>
+2021-08-20 12:32:49,204 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/4555096073/info/ returned response: <Response [200]>
+2021-08-20 12:32:49,770 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/355421021/info/ returned response: <Response [200]>
+2021-08-20 12:32:50,390 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48401078463/info/ returned response: <Response [200]>
+2021-08-20 12:32:50,933 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/43004176972/info/ returned response: <Response [200]>
+2021-08-20 12:32:51,491 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7520834763/info/ returned response: <Response [200]>
+2021-08-20 12:32:51,916 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/40185394125/info/ returned response: <Response [200]>
+2021-08-20 12:32:52,475 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/11299261050/info/ returned response: <Response [200]>
+2021-08-20 12:32:52,925 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/44649806765/info/ returned response: <Response [200]>
+2021-08-20 12:32:53,389 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1544674796/info/ returned response: <Response [200]>
+2021-08-20 12:32:53,853 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/46238618117/info/ returned response: <Response [200]>
+2021-08-20 12:32:54,340 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/5645732011/info/ returned response: <Response [200]>
+2021-08-20 12:32:55,248 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/49080574193/info/ returned response: <Response [200]>
+2021-08-20 12:32:55,763 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/14665899437/info/ returned response: <Response [200]>
+2021-08-20 12:32:56,353 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/632553467/info/ returned response: <Response [200]>
+2021-08-20 12:32:56,969 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/5648893146/info/ returned response: <Response [200]>
+2021-08-20 12:32:57,524 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/13467066452/info/ returned response: <Response [200]>
+2021-08-20 12:32:57,972 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/12065675364/info/ returned response: <Response [200]>
+2021-08-20 12:32:58,581 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48448391951/info/ returned response: <Response [200]>
+2021-08-20 12:32:59,141 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48217321117/info/ returned response: <Response [200]>
+2021-08-20 12:32:59,706 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/5486438890/info/ returned response: <Response [200]>
+2021-08-20 12:33:00,283 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7229786078/info/ returned response: <Response [200]>
+2021-08-20 12:33:00,867 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/33735015543/info/ returned response: <Response [200]>
+2021-08-20 12:33:01,378 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/47176722896/info/ returned response: <Response [200]>
+2021-08-20 12:33:01,934 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/8631547193/info/ returned response: <Response [200]>
+2021-08-20 12:33:02,444 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7270012907/info/ returned response: <Response [200]>
+2021-08-20 12:33:03,012 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/3054279708/info/ returned response: <Response [200]>
+2021-08-20 12:33:03,450 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/47562094951/info/ returned response: <Response [200]>
+2021-08-20 12:33:03,987 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/234048506/info/ returned response: <Response [200]>
+2021-08-20 12:33:04,379 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48893824457/info/ returned response: <Response [200]>
+2021-08-20 12:33:04,932 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/45566411815/info/ returned response: <Response [200]>
+2021-08-20 12:33:05,410 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/27757558942/info/ returned response: <Response [200]>
+2021-08-20 12:33:06,171 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/8710795276/info/ returned response: <Response [200]>
+2021-08-20 12:33:06,728 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/3909123875/info/ returned response: <Response [200]>
+2021-08-20 12:33:07,236 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/992698985/info/ returned response: <Response [200]>
+2021-08-20 12:33:07,767 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/16440875519/info/ returned response: <Response [200]>
+2021-08-20 12:33:08,271 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/46256310834/info/ returned response: <Response [200]>
+2021-08-20 12:33:08,715 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/4183348183/info/ returned response: <Response [200]>
+2021-08-20 12:33:09,259 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1029625520/info/ returned response: <Response [200]>
+2021-08-20 12:33:09,745 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/964517832/info/ returned response: <Response [200]>
+2021-08-20 12:33:10,810 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/6991951875/info/ returned response: <Response [200]>
+2021-08-20 12:33:11,351 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/237670396/info/ returned response: <Response [200]>
+2021-08-20 12:33:11,746 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/49447312033/info/ returned response: <Response [200]>
+2021-08-20 12:33:12,315 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/4079756051/info/ returned response: <Response [200]>
+2021-08-20 12:33:12,823 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/9047228770/info/ returned response: <Response [200]>
+2021-08-20 12:33:13,341 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/4761444422/info/ returned response: <Response [200]>
+2021-08-20 12:33:13,899 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/355445198/info/ returned response: <Response [200]>
+2021-08-20 12:33:14,416 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/47716887568/info/ returned response: <Response [200]>
+2021-08-20 12:33:15,097 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7907612696/info/ returned response: <Response [200]>
+2021-08-20 12:33:15,667 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1650980826/info/ returned response: <Response [200]>
+2021-08-20 12:33:16,138 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/31357520348/info/ returned response: <Response [200]>
+2021-08-20 12:33:16,663 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/4175088532/info/ returned response: <Response [200]>
+2021-08-20 12:33:17,434 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/45776696766/info/ returned response: <Response [200]>
+2021-08-20 12:33:17,992 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/44137264664/info/ returned response: <Response [200]>
+2021-08-20 12:33:18,631 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/37732382778/info/ returned response: <Response [200]>
+2021-08-20 12:33:27,788 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: feed/tag/дизайнер/?max_id=&rank_token=48835444494_81500ee0-4cf5-493e-ae1a-6a5011cbe63d&ranked_content=true& returned response: <Response [200]>
+2021-08-20 12:33:28,326 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/10358619491/info/ returned response: <Response [200]>
+2021-08-20 12:33:28,922 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7817406645/info/ returned response: <Response [200]>
+2021-08-20 12:33:29,437 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/8178592671/info/ returned response: <Response [200]>
+2021-08-20 12:33:29,988 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/2268368012/info/ returned response: <Response [200]>
+2021-08-20 12:33:30,513 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/47471422802/info/ returned response: <Response [200]>
+2021-08-20 12:33:31,034 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/45482019713/info/ returned response: <Response [200]>
+2021-08-20 12:33:31,699 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/5993412083/info/ returned response: <Response [200]>
+2021-08-20 12:33:32,269 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/47576066877/info/ returned response: <Response [200]>
+2021-08-20 12:33:32,919 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/5765681457/info/ returned response: <Response [200]>
+2021-08-20 12:33:33,478 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/46272074883/info/ returned response: <Response [200]>
+2021-08-20 12:33:34,006 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/25791289330/info/ returned response: <Response [200]>
+2021-08-20 12:33:34,601 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1576059895/info/ returned response: <Response [200]>
+2021-08-20 12:33:35,202 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/44793194845/info/ returned response: <Response [200]>
+2021-08-20 12:33:35,728 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/4923474048/info/ returned response: <Response [200]>
+2021-08-20 12:33:36,152 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/2983426994/info/ returned response: <Response [200]>
+2021-08-20 12:33:36,725 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/2672467603/info/ returned response: <Response [200]>
+2021-08-20 12:33:37,190 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/2302468075/info/ returned response: <Response [200]>
+2021-08-20 12:33:37,717 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/8522894333/info/ returned response: <Response [200]>
+2021-08-20 12:33:38,297 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/30097307216/info/ returned response: <Response [200]>
+2021-08-20 12:33:38,850 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/32593496233/info/ returned response: <Response [200]>
+2021-08-20 12:33:39,271 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/45714061705/info/ returned response: <Response [200]>
+2021-08-20 12:33:39,626 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48911341380/info/ returned response: <Response [200]>
+2021-08-20 12:33:40,147 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1333946746/info/ returned response: <Response [200]>
+2021-08-20 12:33:40,732 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1329960231/info/ returned response: <Response [200]>
+2021-08-20 12:33:41,275 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/2289057756/info/ returned response: <Response [200]>
+2021-08-20 12:33:41,851 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/4032186458/info/ returned response: <Response [200]>
+2021-08-20 12:33:42,347 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/2308933316/info/ returned response: <Response [200]>
+2021-08-20 12:33:42,943 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1072662929/info/ returned response: <Response [200]>
+2021-08-20 12:33:43,476 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/38891503451/info/ returned response: <Response [200]>
+2021-08-20 12:33:44,024 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/13098147655/info/ returned response: <Response [200]>
+2021-08-20 12:33:44,541 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/31208098803/info/ returned response: <Response [200]>
+2021-08-20 12:33:45,017 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/47932898555/info/ returned response: <Response [200]>
+2021-08-20 12:33:45,545 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/365448124/info/ returned response: <Response [200]>
+2021-08-20 12:33:46,530 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/17853531261/info/ returned response: <Response [200]>
+2021-08-20 12:33:47,156 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/43885046183/info/ returned response: <Response [200]>
+2021-08-20 12:33:47,780 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48670312132/info/ returned response: <Response [200]>
+2021-08-20 12:33:48,322 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/10251942384/info/ returned response: <Response [200]>
+2021-08-20 12:33:48,827 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/8662318686/info/ returned response: <Response [200]>
+2021-08-20 12:33:49,335 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/12613490314/info/ returned response: <Response [200]>
+2021-08-20 12:33:49,970 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/36660292271/info/ returned response: <Response [200]>
+2021-08-20 12:33:50,472 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/3516817454/info/ returned response: <Response [200]>
+2021-08-20 12:33:51,035 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/44677829178/info/ returned response: <Response [200]>
+2021-08-20 12:33:51,653 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1752791700/info/ returned response: <Response [200]>
+2021-08-20 12:33:52,112 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/44540601544/info/ returned response: <Response [200]>
+2021-08-20 12:33:52,808 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/633285283/info/ returned response: <Response [200]>
+2021-08-20 12:33:53,310 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7422923749/info/ returned response: <Response [200]>
+2021-08-20 12:33:54,024 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7423209923/info/ returned response: <Response [200]>
+2021-08-20 12:33:54,455 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48889727179/info/ returned response: <Response [200]>
+2021-08-20 12:33:55,069 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7360643784/info/ returned response: <Response [200]>
+2021-08-20 12:33:55,629 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/13298734223/info/ returned response: <Response [200]>
+2021-08-20 12:33:56,182 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/3416721925/info/ returned response: <Response [200]>
+2021-08-20 12:33:56,715 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/42973988880/info/ returned response: <Response [200]>
+2021-08-20 12:33:57,164 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/1568692752/info/ returned response: <Response [200]>
+2021-08-20 12:33:57,667 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/46272822565/info/ returned response: <Response [200]>
+2021-08-20 12:33:58,229 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/7233474778/info/ returned response: <Response [200]>
+2021-08-20 12:33:58,739 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/8201436774/info/ returned response: <Response [200]>
+2021-08-20 12:33:59,395 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/45215673361/info/ returned response: <Response [200]>
+2021-08-20 12:33:59,868 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/4945250608/info/ returned response: <Response [200]>
+2021-08-20 12:34:00,377 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/45054626046/info/ returned response: <Response [200]>
+2021-08-20 12:34:00,888 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/49215633684/info/ returned response: <Response [200]>
+2021-08-20 12:34:01,367 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/6620320046/info/ returned response: <Response [200]>
+2021-08-20 12:34:01,969 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/37757275035/info/ returned response: <Response [200]>
+2021-08-20 12:34:02,542 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/2119255543/info/ returned response: <Response [200]>
+2021-08-20 12:34:02,971 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/296193122/info/ returned response: <Response [200]>
+2021-08-20 12:34:03,562 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/10352650680/info/ returned response: <Response [200]>
+2021-08-20 12:34:04,125 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/18427253578/info/ returned response: <Response [200]>
+2021-08-20 12:34:04,630 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/48687572485/info/ returned response: <Response [200]>
+2021-08-20 12:34:05,126 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/33364064118/info/ returned response: <Response [200]>
+2021-08-20 12:34:05,690 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/8145251923/info/ returned response: <Response [200]>
+2021-08-20 12:34:06,828 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/24905590583/info/ returned response: <Response [200]>
+2021-08-20 13:03:31,686 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2021-08-20 13:03:31,686 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\searchdisaner\venv\lib\site-packages\instabot\bot\bot.py
+2021-08-20 13:03:31,688 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2021-08-20 13:03:31,918 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2021-08-20 13:03:32,172 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2021-08-20 13:03:32,431 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2021-08-20 13:03:32,680 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2021-08-20 13:03:33,062 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [400]>
+2021-08-20 13:03:33,062 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"The username you entered doesn\'t appear to belong to an account. Please check your username and try again.","invalid_credentials":true,"error_title":"Incorrect Username","buttons":[{"title":"Try Again","action":"dismiss"}],"status":"fail","error_type":"invalid_user"}'
+2021-08-20 13:03:33,063 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2021-08-20 13:03:33,063 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: The username you entered doesn't appear to belong to an account. Please check your username and try again.
+2021-08-20 13:03:33,064 - instabot version: 0.117.0 (api) - INFO - Error type: invalid_user
+2021-08-20 13:03:33,064 - instabot version: 0.117.0 (api) - ERROR - Failed to login go to instagram and change your password
+2021-08-20 13:03:33,065 - instabot version: 0.117.0 (api) - INFO - Username or password is incorrect.
+2021-08-20 13:03:33,068 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: D:\searchdisaner/config/instbober.checkpoint
+2021-08-20 13:03:33,069 - instabot version: 0.117.0 (bot) - INFO - Total requests: 2438

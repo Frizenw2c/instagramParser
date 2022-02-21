@@ -1,0 +1,17 @@
+2021-08-20 14:40:45,949 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2021-08-20 14:40:45,949 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from D:\searchdisaner\venv\lib\site-packages\instabot\bot\bot.py
+2021-08-20 14:40:45,950 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2021-08-20 14:40:45,950 - instabot version: 0.117.0 (api_login) - INFO - Recovery from D:\searchdisaner/config/todoctordoom_uuid_and_cookie.json: COOKIE False - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=fececc37-13fb-4ca7-b4c1-842926ac61f0
+- uuid=d8c038f7-d60d-4ffc-ae20-1b8f9d340f0b
+- client_session_id=74517733-9e97-4ac6-9bd3-6396afa278ed
+- device_id=android-638845ae1420b535
+2021-08-20 14:40:45,951 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2021-08-20 14:40:46,211 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2021-08-20 14:40:46,459 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2021-08-20 14:40:46,705 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2021-08-20 14:40:46,927 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [429]>
+2021-08-20 14:40:46,927 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"Please wait a few minutes before you try again.","status":"fail"}'
+2021-08-20 14:40:46,927 - instabot version: 0.117.0 (api) - ERROR - Request returns 429 error!
+2021-08-20 14:40:46,927 - instabot version: 0.117.0 (api) - WARNING - That means 'too many requests'. I'll go to sleep for 5 minutes.
