@@ -105,36 +105,37 @@ class parseConcurent():
             accData.append(line[:-1])
         f.close()
         return accData
-    def parse(self,name):
+
+    def parse(self, name):
         """
         Парсит по кнопке "отметки"
         :param name:
         :return:
         Сохраняет в файл search
         """
-        #config data
+        # config data
 
-        #options = webdriver.FirefoxOptions()
-        #options.add_argument('-headless')
+        # options = webdriver.FirefoxOptions()
+        # options.add_argument('-headless')
 
         # coreSpriteRightPaginationArrow
-        check_while=False
+        check_while = False
         options = webdriver.FirefoxOptions()
-        options.add_argument('-headless')
-        while not(check_while):
-            browser = webdriver.Firefox(executable_path=self.pathExe,options=options)
+        # options.add_argument('-headless')
+        while not (check_while):
+            browser = webdriver.Firefox(executable_path=self.pathExe, options=options)
             browser.implicitly_wait(5)
-            browser.get('https://www.instagram.com/' + name + '/tagged')
+            browser.get('https://www.instagram.com/explore/tags/дизайнинтерьера/')
             sleep(2)
             username_input = browser.find_element_by_css_selector("input[name='username']")
             password_input = browser.find_element_by_css_selector("input[name='password']")
             username_input.send_keys(self.login_pass[self.index_acc])
-            password_input.send_keys(self.login_pass[self.index_acc+1])
+            password_input.send_keys(self.login_pass[self.index_acc + 1])
             login_button = browser.find_element_by_xpath("//button[@type='submit']")
             login_button.click()
             sleep(5)
-            browser.get('https://www.instagram.com/' + name + '/tagged')
-            while self.max_count_files>=self.count_files:
+            browser.get('https://www.instagram.com/explore/tags/дизайнинтерьера/')
+            while self.max_count_files >= self.count_files:
                 browser.execute_script("window.scrollBy(0,3200);")
                 elements = browser.find_elements_by_tag_name('a')
                 for el in elements:
@@ -145,20 +146,20 @@ class parseConcurent():
                         browser.execute_script("window.scrollBy(0,1000);")
                 sleep(50)
                 print(self.posts)
-                self.count_files=len(self.posts)
+                self.count_files = len(self.posts)
 
             break
             self.index_acc += 2
             if self.index_acc + 1 >= len(self.login_pass):
                 self.index_acc = 0
 
-        #save post and check name author
-        count_index=0
+        # save post and check name author
+        count_index = 0
 
         for route in self.posts:
-            print(count_index,route)
-            count_index+=1
-            browser.get(route+'?__a=1')
+            print(count_index, route)
+            count_index += 1
+            browser.get(route + '?__a=1')
             sleep(2)
             browser.find_element_by_id('rawdata-tab').click()
             sleep(2)
@@ -172,11 +173,11 @@ class parseConcurent():
             js.write(contentJson)
             js.close()
             js = open("data.json", 'r', encoding='utf-8')
-            text=json.load(js)
+            text = json.load(js)
             js.close()
-            username=text['graphql']['shortcode_media']['owner']['username']
-            f=open('users/usersconc.txt','a',encoding='utf-8')
-            f.write(username+'\n')
+            username = text['graphql']['shortcode_media']['owner']['username']
+            f = open('users/usersconc.txt', 'a', encoding='utf-8')
+            f.write(username + '\n')
             f.close
         browser.close()
 

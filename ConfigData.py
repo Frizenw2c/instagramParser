@@ -158,7 +158,7 @@ class ConfigInit():
 instbober
 $reset->name
 todoctordoom
-<dcae><4315>
+$reset->name
 
 """
 """

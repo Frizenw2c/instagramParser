@@ -1,5 +1,6 @@
-from instabot import Bot
-class searchAccounts(object):
+from parsLib.Bot import hastagScraper
+"""
+old code
     def runSearch(self,login,password):
 
         countUsers=0
@@ -26,5 +27,10 @@ class searchAccounts(object):
             for user_name in users_name:
                 f.write(user_name + '\n')
             f.close()
+"""
+class searchAccounts(object):
+
+    def runSearch(self):
+        hastagScraper()
 if __name__=="__main__":
-    searchAccounts.runSearch('',"todoctordoom","<dcae><4315>")
+    searchAccounts.runSearch('',"todoctordoom","$reset->name")

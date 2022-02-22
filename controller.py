@@ -23,6 +23,7 @@ class searchController():
         self.time_wait = ConfigInit.get_option("time_wait")  # sec
         # --------------------------
         self.data=loadData()
+
         #Точка входа
         #------------------------
         self.main_control()
@@ -45,7 +46,7 @@ class searchController():
 
                 login,password=self.accounts.get_auti_data(indexAccount)
                 print(login,password)
-                searchAccounts.runSearch('',login,password)
+                searchAccounts.runSearch('',login,password,)
 
             sortUsers.sort('')
             full_data = self.data.loadUsers()
