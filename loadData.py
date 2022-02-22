@@ -4,6 +4,8 @@
 
 """
 import json
+from multipledispatch import dispatch
+
 class loadData():
     def __init__(self,
                  users_path="users/sort.txt",
@@ -16,7 +18,24 @@ class loadData():
         self.stops_path=stops_path
         self.addInfo_path=addinfo_path
 
+    @dispatch()
     def loadUsers(self):
+        f=open(self.users_path,'r')
+        users=[]
+        for name in f:
+            if name[:-1]!='--------------------------' and name[:-1]!='---------------------------':
+
+                if name[:-1]=="++++++++++++++++++++++++++++++++++":
+                    break
+                if name[:-1] != "+++++++++++++++++++++++++++++++++":
+                    users.append(name[:-1])
+
+        self.users=users
+        f.close
+        return users
+
+    @dispatch(str)
+    def loadUsers(self,out_kjey):
         f=open(self.users_path,'r')
         users=[]
         for name in f:

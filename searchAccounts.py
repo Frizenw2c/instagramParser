@@ -1,4 +1,5 @@
 from parsLib.Bot import hastagScraper
+from loadData import loadData
 """
 old code
     def runSearch(self,login,password):
@@ -29,8 +30,15 @@ old code
             f.close()
 """
 class searchAccounts(object):
-
-    def runSearch(self):
-        hastagScraper()
+    def __init__(self,loadedData):
+        self.loadedData=loadedData
+        print(self.key_words)
+    def runSearch(self,login,password):
+        hastagScraper(loadedData)
 if __name__=="__main__":
+    loadedData=loadData()
+    loadedData.loadKeywords()
+    loadedData.loadUsers()
+
+    searchAccounts(loadedData)
     searchAccounts.runSearch('',"todoctordoom","$reset->name")
