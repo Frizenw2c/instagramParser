@@ -124,6 +124,7 @@ class loadData():
             else:
                 return False
 
+    @dispatch(str)
     def getOption(self,option):
         if option=="data":
             return self.data
@@ -136,7 +137,38 @@ class loadData():
         elif option=="addinfo":
             return self.addInfo
 
+    """
+    Перед использованием getOption  с indexOption необходимо удостоверится,что индекс 
+    находится в диапозоне от 0 до максимального индекса свойства,его можно узнать с помощью
+    getMaxIndexOption(option)
+    """
+    @dispatch(str,int)
+    def getOption(self, option,indexOption):
+        if(self.getMaxIndexOption(option)>=indexOption):
+            if option == "data":
+                return self.data[indexOption]
+            elif option == "users":
+                return self.users[indexOption]
+            elif option == "key_words":
+                return self.key_words[indexOption]
+            elif option == "stops":
+                return self.stops[indexOption]
+            elif option == "addinfo":
+                return self.addInfo[indexOption]
+        else:
+            print("Error index out of range")
 
+    def getMaxIndexOption(self,option):
+        if option == "data":
+            return len(self.data)-1
+        elif option == "users":
+            return len(self.users)-1
+        elif option == "key_words":
+            return len(self.key_words)-1
+        elif option == "stops":
+            return len(self.stops)-1
+        elif option == "addinfo":
+            return len(self.addInfo)-1
 if __name__=="__main__":
     data_container=loadData()
     data_container.loadAll()

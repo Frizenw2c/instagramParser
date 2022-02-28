@@ -314,5 +314,6 @@ class PublicOptions():
 
 if __name__ == "__main__":
     #config=ConfigPaths()
-    #configAcc=AccountsConfig()
-    public_options=PublicOptions()
+    configAcc=AccountsConfig()
+    #public_options=PublicOptions()
+    print(configAcc.get_auti_data())

@@ -7,6 +7,7 @@ from ConfigData import ConfigInit
 from ConfigData import AccountsConfig
 from ConfigData import PublicOptions
 from loadData import loadData
+
 class searchController():
     def __init__(self,count_iterations,CheckSearchAcc):
         # config data
@@ -23,13 +24,11 @@ class searchController():
         self.time_wait = ConfigInit.get_option("time_wait")  # sec
         # --------------------------
         self.data=loadData()
-
+        self.data.loadAll()
         #Точка входа
         #------------------------
         self.main_control()
         #------------------------
-
-
 
     def main_control(self):
         indexAccount = 0
@@ -43,10 +42,9 @@ class searchController():
                 sleep(self.time_wait)
                 index_iteration=0
             if CheckSearchAcc=='yes':
-
                 login,password=self.accounts.get_auti_data(indexAccount)
-                print(login,password)
-                searchAccounts.runSearch('',login,password,)
+                search=searchAccounts(self.data)
+                search.runSearch(login,password)
 
             sortUsers.sort('')
             full_data = self.data.loadUsers()
@@ -65,6 +63,6 @@ class searchController():
 
 
 if __name__ == "__main__":
-    count_iterations = int(input('Введите количество итераций сбора'))
-    CheckSearchAcc = str(input('Искать новвые аккаунты yes/no').lower())
+    count_iterations = int(input('Введите количество итераций сбора '))
+    CheckSearchAcc = str(input('Искать новвые аккаунты yes/no ').lower())
     controller=searchController(count_iterations,CheckSearchAcc)
