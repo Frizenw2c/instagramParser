@@ -43,6 +43,7 @@ import os
 import zipfile
 from os import path
 from time import sleep
+from ConfigData import ConfigInit
 """
 Класс для установки парсера конкурента на прод
 """
@@ -81,6 +82,7 @@ class installParser():
         archive.extractall('')
 
     def editFiles(self,files):
+        initObj=ConfigInit()
         for file in files:
             if file=="accounts/logPass.txt":
                 print("Сейчас нужно будет ввести логин и пароли к аккаунтам инстаграмма используемые для сбора")
@@ -113,12 +115,11 @@ class installParser():
                 path_accounts="accounts/logPass.txt"
                 path_jsons=path.join(os.getcwd(),'jsons')
                 index_acc= 0
-                f = open(file, 'w', encoding='utf-8')
-                f.write("pathExe=" + str(pathExe) + '\n')
-                f.write("path_accounts=" + str(path_accounts) + '\n')
-                f.write("path_jsons=" + str(path_jsons) + '\n')
-                f.write("index_acc=" + str(index_acc))
-                f.close
+                initObj.set_path_driver(pathExe)
+                initObj.set_path_jsons(path_jsons)
+                initObj.set_path_accounts(path_accounts)
+                initObj.set_index_acc(index_acc)
+
     def installFirefox(self):
         print('Необходимо установить Firefox')
         os.startfile('Firefox Installer.exe')
@@ -126,8 +127,6 @@ class installParser():
 
 class installDevNewPc(installParser):
     def __init__(self):
-        self.deArchive()
-        sleep(15)
 
         self.installFirefox()
         sleep(15)
@@ -135,7 +134,7 @@ class installDevNewPc(installParser):
         if checkInstall == 'yes':
             self.createDirectories(["jsons/", "users/"])
             sleep(15)
-            self.createFiles(files=["users/sortconc.txt","users/usersconc.txt"])
+            self.createFiles(files=["users/sort.txt","users/users.txt"])
             sleep(15)
             self.editFiles(files=["accounts/logPass.txt","options/resetfile.txt","options/publicOptions.txt","options/init.txt"])
             sleep(15)
@@ -162,3 +161,4 @@ if __name__=='__main__':
     print('Установка прошла успешно')
     input('Нажмите enter чтобы закрыть программу')
     """
+    installDevNewPc()
