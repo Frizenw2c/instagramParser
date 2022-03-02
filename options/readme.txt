@@ -5,7 +5,7 @@
 -------------------------------------------
 |pathExe=C:\driverfox\geckodriver.exe     | Путь до exe файла драйвера FireFox
 |path_accounts=accounts/logPass.txt       | Путь до файла с аккаунтами.
-|path_jsons=D:\searchdisaner\jsons_conc   | Путь до папки с json файлами.
+|path_jsons=D:\searchdisaner\jsons        | Путь до папки с json файлами.
 |index_acc=0                              | Номер аккаунта использумоего первым,отсчёт идёт с 0.Если первый аккаунт
 |                                         | не активен то использует 1 или 2 ...
 |time_wait=1800                           | Время перерыва при больщом количестве попыток, в секундах
