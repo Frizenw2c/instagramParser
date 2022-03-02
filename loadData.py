@@ -49,6 +49,7 @@ class loadData():
         self.users=users
         f.close
         return users
+
     def loadDataKeys(self):
         self.data = {'fullname': [], 'username': [], 'biography': [], 'count_followed_by': [], 'email': [], 'phone': [],
                 'site': []}

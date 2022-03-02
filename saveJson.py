@@ -4,15 +4,21 @@ from keyboard import write
 from keyboard import send
 import shutil
 from os import path
+from ConfigData import ConfigInit
 from selenium.webdriver.chrome.options import Options
 """
 ---------------TODO---------------
 1.Переписать под общий функционал
 """
-class saveJson(object):
+class saveJson():
+    def __init__(self,loadedData):
+        self.options = webdriver.FirefoxOptions()
+        self.options.add_argument('-headless')
+        #self.loadedData=loadedData.get
+        initObj=ConfigInit()
+        self.usersSrc=initObj.get_path_jsons()
+        self.
     def save(self):
-        options = webdriver.FirefoxOptions()
-        #options.add_argument('-headless')
         try:
 
             f=open("users/sort.txt","r")
