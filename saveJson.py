@@ -5,11 +5,14 @@ from keyboard import send
 import shutil
 from os import path
 from selenium.webdriver.chrome.options import Options
-
+"""
+---------------TODO---------------
+1.Переписать под общий функционал
+"""
 class saveJson(object):
     def save(self):
         options = webdriver.FirefoxOptions()
-        options.add_argument('-headless')
+        #options.add_argument('-headless')
         try:
 
             f=open("users/sort.txt","r")
@@ -67,11 +70,11 @@ class saveJson(object):
                 js.write(contentJson)
                 js.close()
                 #browser.close()
-                #if path.exists("C:\\Users\\User\\Downloads\\"+user+".json"):
-                    #shutil.move("C:\\Users\\User\\Downloads\\"+user+".json", "D:\\searchdisaner\\jsons\\"+user+".json")
-                #else:
-                    #sleep(5)
-                    #shutil.move("C:\\Users\\User\\Downloads\\" + user + ".json", "D:\\searchdisaner\\jsons\\" + user + ".json")
+                if path.exists("C:\\Users\\User\\Downloads\\"+user+".json"):
+                    shutil.move("C:\\Users\\User\\Downloads\\"+user+".json", "D:\\searchdisaner\\jsons\\"+user+".json")
+                else:
+                    sleep(5)
+                    shutil.move("C:\\Users\\User\\Downloads\\" + user + ".json", "D:\\searchdisaner\\jsons\\" + user + ".json")
 
 
                 count_iterations+=1

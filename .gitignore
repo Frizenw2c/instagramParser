@@ -1,6 +1,6 @@
-/jsons/
-/jsons_conc/
-/users/
-/archive_dump/
-/venv/
+/jsons/*
+/jsons_conc/*
+/users/*
+/archive_dump/*
+/venv/*
 

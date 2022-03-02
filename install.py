@@ -1,5 +1,5 @@
 """
-------------------TODO------------------
+------------------TODOOLD------------------
 1.Собрать список необходимых файлов --- V
 2.Создание файлов ---V
 3.Установка geckodriver из архива ---V
@@ -8,6 +8,13 @@
 6.Запуск скрипта parseConc в режиме теста
 6.1.Пробежаться с работой скрипта в разных режимах
 6.2.Если есть ошибки то попытаться пофиксить и вывести результат
+"""
+"""
+------------------TODO------------------
+1.Класс для устнановки на новом компьютере для разработки
+2.Методы установки класса для разработки должны быть наследуемы в класс для установки для пользователя
+3.Переопределение путей к текущему каталогу
+4.Создание документации по установке  
 """
 """
 ------------------FILES------------------
@@ -36,10 +43,12 @@ import os
 import zipfile
 from os import path
 from time import sleep
-
+"""
+Класс для установки парсера конкурента на прод
+"""
 class installParser():
-    def createDirectories(self):
-        directories=["jsons_conc/","data/","users/","accounts/","options/"]
+
+    def createDirectories(self,directories):
         for directory in directories:
             if not(path.exists(directory)):
                 try:
@@ -50,8 +59,7 @@ class installParser():
             else:
                 print(directory,'уже существует')
 
-    def createFiles(self):
-        files=["users/sortconc.txt","users/usersconc.txt","accounts/logPass.txt","options/resetfile.txt","options/publicOptions.txt","options/init.txt"]
+    def createFiles(self,files):
         for file in files:
             if not(path.exists(file)):
                 try:
@@ -72,8 +80,7 @@ class installParser():
         archive = zipfile.ZipFile(archive_path, "r")
         archive.extractall('')
 
-    def editFiles(self):
-        files=["accounts/logPass.txt","options/resetfile.txt","options/publicOptions.txt","options/init.txt"]
+    def editFiles(self,files):
         for file in files:
             if file=="accounts/logPass.txt":
                 print("Сейчас нужно будет ввести логин и пароли к аккаунтам инстаграмма используемые для сбора")
@@ -104,7 +111,7 @@ class installParser():
             elif file=="options/init.txt":
                 pathExe="geckodriver.exe"
                 path_accounts="accounts/logPass.txt"
-                path_jsons="D:\searchdisaner\jsons_conc"
+                path_jsons=path.join(os.getcwd(),'jsons')
                 index_acc= 0
                 f = open(file, 'w', encoding='utf-8')
                 f.write("pathExe=" + str(pathExe) + '\n')
@@ -116,7 +123,29 @@ class installParser():
         print('Необходимо установить Firefox')
         os.startfile('Firefox Installer.exe')
 
+
+class installDevNewPc(installParser):
+    def __init__(self):
+        self.deArchive()
+        sleep(15)
+
+        self.installFirefox()
+        sleep(15)
+        checkInstall = str(input('Введите "yes" когда установка Firefox будет законченна:')).strip(' ').lower()
+        if checkInstall == 'yes':
+            self.createDirectories(["jsons/", "users/"])
+            sleep(15)
+            self.createFiles(files=["users/sortconc.txt","users/usersconc.txt"])
+            sleep(15)
+            self.editFiles(files=["accounts/logPass.txt","options/resetfile.txt","options/publicOptions.txt","options/init.txt"])
+            sleep(15)
+        print('Установка прошла успешно')
+        input('Нажмите enter чтобы закрыть программу')
+
+
 if __name__=='__main__':
+    """
+    Старая установка
     install=installParser()
     install.deArchive()
     sleep(15)
@@ -126,9 +155,10 @@ if __name__=='__main__':
     if checkInstall=='yes':
         install.createDirectories()
         sleep(15)
-        install.createFiles()
+        install.createFiles(["jsons_conc/","data/","users/","accounts/","options/"])
         sleep(15)
         install.editFiles()
         sleep(15)
     print('Установка прошла успешно')
     input('Нажмите enter чтобы закрыть программу')
+    """

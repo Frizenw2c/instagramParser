@@ -1,5 +1,5 @@
 pathExe=C:\driverfox\geckodriver.exe
 path_accounts=accounts/logPass.txt
-path_jsons=D:\searchdisaner\jsons_conc
+path_jsons=D:\searchdisaner\jsons
 index_acc=0
 time_wait=1800
