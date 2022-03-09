@@ -13,7 +13,7 @@ def sendTab(count):
 
 def sendMassage(users, login, password):
 
-    browser = webdriver.Firefox(executable_path="C:\driverfox\geckodriver.exe")
+    browser = webdriver.Firefox(executable_path="F:\WORK\instagramParser\geckodriver.exe")
     browser.implicitly_wait(5)
     browser.get('https://www.instagram.com/instbober/?__a=1')
     sleep(2)

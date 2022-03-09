@@ -1,5 +1,5 @@
-pathExe=C:\driverfox\geckodriver.exe
+pathExe=geckodriver.exe
 path_accounts=accounts/logPass.txt
-path_jsons=D:\searchdisaner\jsons
+path_jsons=F:\WORK\instagramParser\jsons
 index_acc=0
 time_wait=1800

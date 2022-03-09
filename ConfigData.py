@@ -10,9 +10,9 @@ from multipledispatch import dispatch
 6.Не добавлять set_option,установку параметров лучше делать через объекты   
 """
 """
-pathExe=C:\driverfox\geckodriver.exe
+pathExe=F:\WORK\instagramParser\geckodriver.exe
 path_accounts=accounts/logPass.txt
-path_jsons=D:\searchdisaner\jsons_conc
+path_jsons=F:\WORK\instagramParser\jsons_conc
 index_acc=0
 
 """

@@ -19,9 +19,9 @@ import os
 """
 ------------------Code save------------------
 self.max_count_files = 150
-self.pathExe = "C:\driverfox\geckodriver.exe"
+self.pathExe = "F:\WORK\instagramParser\geckodriver.exe"
 self.path_accounts = 'accounts/logPass.txt'
-self.path_jsons = 'D:\searchdisaner\jsons_conc'
+self.path_jsons = 'F:\WORK\instagramParser\jsons_conc'
 self.index_acc = 0
 self.count_iterations=30 # Количество итераций на аккаунте
 
@@ -229,7 +229,7 @@ class parseConcurent():
                 print(count_iterations)
                 if count_iterations == 0:
                     global browser
-                    browser = webdriver.Firefox(executable_path="C:\driverfox\geckodriver.exe", options=options)
+                    browser = webdriver.Firefox(executable_path="F:\WORK\instagramParser\geckodriver.exe", options=options)
                     browser.implicitly_wait(5)
 
                     browser.get('https://www.instagram.com/' + user + '/?__a=1')

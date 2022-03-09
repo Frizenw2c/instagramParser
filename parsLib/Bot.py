@@ -15,7 +15,7 @@ class hastagScraper():
         self.count_files=0
 
     def openBrowser(self):
-        self.browser = webdriver.Firefox(executable_path="C:\driverfox\geckodriver.exe", options=self.options)
+        self.browser = webdriver.Firefox(executable_path="F:\WORK\instagramParser\geckodriver.exe", options=self.options)
         self.browser.implicitly_wait(5)
 
     def closeBroser(self):

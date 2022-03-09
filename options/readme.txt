@@ -3,9 +3,9 @@
 2.Файл init.txt задает настройки которые обычно не меняются,при перемещение каких либо директорий,
 необходимо перенести заменить ссылку на новую.Значение строк:
 -------------------------------------------
-|pathExe=C:\driverfox\geckodriver.exe     | Путь до exe файла драйвера FireFox
+|pathExe=F:\WORK\instagramParser\geckodriver.exe     | Путь до exe файла драйвера FireFox
 |path_accounts=accounts/logPass.txt       | Путь до файла с аккаунтами.
-|path_jsons=D:\searchdisaner\jsons        | Путь до папки с json файлами.
+|path_jsons=F:\WORK\instagramParser\jsons        | Путь до папки с json файлами.
 |index_acc=0                              | Номер аккаунта использумоего первым,отсчёт идёт с 0.Если первый аккаунт
 |                                         | не активен то использует 1 или 2 ...
 |time_wait=1800                           | Время перерыва при больщом количестве попыток, в секундах

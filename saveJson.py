@@ -46,7 +46,7 @@ class saveJson():
                 print(count_iterations)
                 if count_iterations==0:
                     global browser
-                    browser = webdriver.Firefox(executable_path="C:\driverfox\geckodriver.exe",options=options)
+                    browser = webdriver.Firefox(executable_path="F:\WORK\instagramParser\geckodriver.exe",options=options)
                     browser.implicitly_wait(5)
 
                     browser.get('https://www.instagram.com/'+user+'/?__a=1')
