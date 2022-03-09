@@ -1,8 +1,8 @@
 """
 ---------------TODO---------------
-2.Из ссылок wa.me ,api.watsapp доставать номера телефонов
-3.из ссылки taplink можно вытащить номера телефонов,почту и сайт,необходимо детально изучить все веб страницы в поисках алгоритма
-4.contact-me можно достать ссылки,телефон через href
+2.Из ссылок wa.me ,api.watsapp доставать номера телефонов ----V
+3.из ссылки taplink можно вытащить номера телефонов,почту и сайт,необходимо детально изучить все веб страницы в поисках алгоритма ----V
+4.contact-me можно достать ссылки,телефон через href ---V
 
 
 
@@ -26,7 +26,7 @@ import json
 import os
 class additionallIInfoController():
     def __init__(self):
-        self.path_to_addInfo_json="D:\searchdisaner\data\\additional_info\\add_data.json"
+        self.path_to_addInfo_json="data\\additional_info\\add_data.json"
         if not os.path.exists(self.path_to_addInfo_json):
             js=open(self.path_to_addInfo_json,mode="w")
             js.close()
