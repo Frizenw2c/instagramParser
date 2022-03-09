@@ -199,4 +199,5 @@ if __name__ == "__main__":
     cache_obj = cache(data_container, loaded)
     sort_data=cache_obj.cache_load()
     #print(cache_obj.delete_cache())
-    save=cache_obj.get_save_data()
+    #save=cache_obj.get_save_data()
+    cache_obj.delete_cache()

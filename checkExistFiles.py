@@ -12,18 +12,20 @@ for name in f:
     if not(check) and name[:-1]!="++++++++++++++++++++++++++++++++++":
             users.append(name[:-1])
 
-print(users)
+#print(users)
 
 f.close()
 count=0
+
 for user in users:
-    if not (path.exists("D:\\searchdisaner\\jsons\\" + user + ".json")):
+    if not (path.exists("D:\\instagramParser\\jsons\\" + user + ".json")):
         print(user)
         count+=1
         miss_users.append(user)
     else:
         exist_users.append(user)
 print(count)
+
 f=open("users/repair_sort.txt",'w')
 for exist_user in exist_users:
     f.write(exist_user+'\n')
