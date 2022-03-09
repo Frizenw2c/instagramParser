@@ -10,7 +10,8 @@ from ConfigData import PublicOptions
 from selenium.webdriver.chrome.options import Options
 """
 ---------------TODO---------------
-1.Переписать под общий функционал
+1.Переписать под общий функционал ---V
+2.Дописать обработку начала и конца списка юзеров
 """
 class saveJson():
     def __init__(self,loadedData):
@@ -59,7 +60,7 @@ class saveJson():
         self.check_string=check_string
         self.full_data=full_data
         self.users=users
-        self.number_string = number_string
+        self.number_string = check_string
 
     def openBrowser(self):
         self.browser = webdriver.Firefox(executable_path=self.driverSrc, options=self.options)
@@ -125,12 +126,12 @@ class saveJson():
 
 
                 count_iterations+=1
-                self.number_string += 1
                 if count_iterations==self.max_count_iterations:
                     count_iterations=0
                     self.closeBrowser()
                     #self.saveUsersProgress()
                     break
+                self.number_string += 1
 
         except:
             self.saveUsersProgress()

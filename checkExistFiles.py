@@ -18,7 +18,7 @@ f.close()
 count=0
 
 for user in users:
-    if not (path.exists("D:\\instagramParser\\jsons\\" + user + ".json")):
+    if not (path.exists("\\jsons\\" + user + ".json")):
         print(user)
         count+=1
         miss_users.append(user)
