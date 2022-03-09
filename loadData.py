@@ -173,3 +173,4 @@ class loadData():
 if __name__=="__main__":
     data_container=loadData()
     data_container.loadAll()
+    print(data_container.getOption("users"))
