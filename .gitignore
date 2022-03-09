@@ -4,3 +4,4 @@
 /archive_dump/*
 /venv/*
 options/init.txt
+geckodriver.log
