@@ -12,7 +12,7 @@ from multipledispatch import dispatch
 """
 pathExe=F:\WORK\instagramParser\geckodriver.exe
 path_accounts=accounts/logPass.txt
-path_jsons=F:\WORK\instagramParser\jsons_conc
+path_jsons=F:\WORK\instagramParser\jsons
 index_acc=0
 
 """

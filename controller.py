@@ -37,13 +37,13 @@ class searchController():
         count_iterations_save = 0
 
 
-        for _ in range( count_iterations):
+        for _ in range( self.count_iterations):
             if index_iteration==self.max_index_iteration:
                 print('Слишком много итераций работа программы приостановлена на:',self.time_wait//60,'минут')
                 sleep(self.time_wait)
                 index_iteration=0
             login,password=self.accounts.get_auti_data(indexAccount)
-            if CheckSearchAcc=='yes':
+            if self.CheckSearchAcc=='yes':
                 search=searchAccounts(self.data)
                 search.runSearch(login,password)
 

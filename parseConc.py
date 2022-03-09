@@ -21,7 +21,7 @@ import os
 self.max_count_files = 150
 self.pathExe = "F:\WORK\instagramParser\geckodriver.exe"
 self.path_accounts = 'accounts/logPass.txt'
-self.path_jsons = 'F:\WORK\instagramParser\jsons_conc'
+self.path_jsons = 'F:\WORK\instagramParser\jsons'
 self.index_acc = 0
 self.count_iterations=30 # Количество итераций на аккаунте
 
