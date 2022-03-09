@@ -27,6 +27,7 @@ class searchController():
         self.data.loadAll()
         #Точка входа
         #------------------------
+        self.saveJsonObj= saveJson(self.data)
         self.main_control()
         #------------------------
 
@@ -41,8 +42,8 @@ class searchController():
                 print('Слишком много итераций работа программы приостановлена на:',self.time_wait//60,'минут')
                 sleep(self.time_wait)
                 index_iteration=0
+            login,password=self.accounts.get_auti_data(indexAccount)
             if CheckSearchAcc=='yes':
-                login,password=self.accounts.get_auti_data(indexAccount)
                 search=searchAccounts(self.data)
                 search.runSearch(login,password)
 
@@ -50,7 +51,7 @@ class searchController():
             full_data = self.data.loadUsers()
             while full_data[-1]!="++++++++++++++++++++++++++++++++++\n":
                 if [-1]=="++++++++++++++++++++++++++++++++++\n":break
-                saveJson.save('',login,password)
+                self.saveJsonObj.save(login,password)
                 full_data = self.data.loadUsers()
 
 
