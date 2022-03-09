@@ -50,7 +50,7 @@ class searchController():
             full_data = self.data.loadUsers()
             while full_data[-1]!="++++++++++++++++++++++++++++++++++\n":
                 if [-1]=="++++++++++++++++++++++++++++++++++\n":break
-                saveJson.save('')
+                saveJson.save('',login,password)
                 full_data = self.data.loadUsers()
 
 
