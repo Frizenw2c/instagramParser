@@ -8,7 +8,7 @@ class hastagScraper():
     def __init__(self,loadData):
         self.loadData=loadData
         self.options = webdriver.FirefoxOptions()
-        #self.options.add_argument()
+        #self.options.add_argument('-headless')
         self.max_count_files=int(PublicOptions.get_public_option('max_count_files'))
         self.maxIndexOptionKeywords=loadData.getMaxIndexOption("key_words")
         self.indexOptionKeywords=0
