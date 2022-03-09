@@ -52,7 +52,7 @@ class saveJson():
                     users.append(name[:-1])
                 number_string += 1
         print(users)
-        print(full_data, len(full_data) - check_string)
+        
         f.close()
 
         self.check_string=check_string
