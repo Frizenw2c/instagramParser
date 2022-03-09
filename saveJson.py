@@ -40,6 +40,7 @@ class saveJson():
         f = open("users/sort.txt", "r")
         users = []
         check = False
+        check_string =0
         number_string = 0
         full_data = []
         for name in f:
@@ -52,13 +53,13 @@ class saveJson():
                     users.append(name[:-1])
                 number_string += 1
         print(users)
-        
+
         f.close()
 
         self.check_string=check_string
         self.full_data=full_data
         self.users=users
-        self.number_string = check_string
+        self.number_string = number_string
 
     def openBrowser(self):
         self.browser = webdriver.Firefox(executable_path=self.driverSrc, options=self.options)
