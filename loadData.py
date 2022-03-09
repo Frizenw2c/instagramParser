@@ -11,7 +11,7 @@ class loadData():
                  users_path="users/sort.txt",
                  key_words_path="key words.txt",
                  stops_path="stop words.txt",
-                 addinfo_path="D:\searchdisaner\data\\additional_info\\add_data.json"
+                 addinfo_path="data\\additional_info\\add_data.json"
                  ):
         self.users_path=users_path
         self.key_words_path=key_words_path
