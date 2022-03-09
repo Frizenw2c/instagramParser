@@ -1,2 +1,3 @@
-count_iterations=35
-max_count_files=250
+count_iterations=15
+max_count_files=150
+max_index_iteration=4
